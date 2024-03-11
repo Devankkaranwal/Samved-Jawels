@@ -1,0 +1,779 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F9765904F8B54E1A6EBEFBE /* Pods_SamvedJewels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148C2ABF2C508EDFF1D77A64 /* Pods_SamvedJewels.framework */; };
+		1384D5DF2B0A93C5007A87E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1384D5DE2B0A93C5007A87E1 /* AppDelegate.swift */; };
+		1384D5E12B0A93C5007A87E1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1384D5E02B0A93C5007A87E1 /* SceneDelegate.swift */; };
+		1384D5E62B0A93C5007A87E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1384D5E42B0A93C5007A87E1 /* Main.storyboard */; };
+		1384D5E82B0A93CF007A87E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1384D5E72B0A93CF007A87E1 /* Assets.xcassets */; };
+		1384D5EB2B0A93CF007A87E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1384D5E92B0A93CF007A87E1 /* LaunchScreen.storyboard */; };
+		1384D5F62B0A93D0007A87E1 /* SamvedJewelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1384D5F52B0A93D0007A87E1 /* SamvedJewelsTests.swift */; };
+		1384D6002B0A93D0007A87E1 /* SamvedJewelsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1384D5FF2B0A93D0007A87E1 /* SamvedJewelsUITests.swift */; };
+		1384D6022B0A93D0007A87E1 /* SamvedJewelsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1384D6012B0A93D0007A87E1 /* SamvedJewelsUITestsLaunchTests.swift */; };
+		1384D60F2B0A9410007A87E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1384D60E2B0A9410007A87E1 /* ViewController.swift */; };
+		1384D6112B0A9419007A87E1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1384D6102B0A9419007A87E1 /* Network.swift */; };
+		13E79A762B112D750002470E /* data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13E79A752B112D750002470E /* data.swift */; };
+		3A95C024CD231B3BA3B23B72 /* Pods_SamvedJewelsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECD4D8758173E31E154BD9DC /* Pods_SamvedJewelsTests.framework */; };
+		75BCF097AE2B30864B3A0141 /* Pods_SamvedJewels_SamvedJewelsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037A601DDECC6A99FA01D3B4 /* Pods_SamvedJewels_SamvedJewelsUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1384D5F22B0A93D0007A87E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1384D5D32B0A93C5007A87E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1384D5DA2B0A93C5007A87E1;
+			remoteInfo = SamvedJewels;
+		};
+		1384D5FC2B0A93D0007A87E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1384D5D32B0A93C5007A87E1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1384D5DA2B0A93C5007A87E1;
+			remoteInfo = SamvedJewels;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		037A601DDECC6A99FA01D3B4 /* Pods_SamvedJewels_SamvedJewelsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SamvedJewels_SamvedJewelsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1384D5DB2B0A93C5007A87E1 /* SamvedJewels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SamvedJewels.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1384D5DE2B0A93C5007A87E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1384D5E02B0A93C5007A87E1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1384D5E52B0A93C5007A87E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1384D5E72B0A93CF007A87E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1384D5EA2B0A93CF007A87E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1384D5EC2B0A93CF007A87E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1384D5F12B0A93D0007A87E1 /* SamvedJewelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SamvedJewelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1384D5F52B0A93D0007A87E1 /* SamvedJewelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamvedJewelsTests.swift; sourceTree = "<group>"; };
+		1384D5FB2B0A93D0007A87E1 /* SamvedJewelsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SamvedJewelsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1384D5FF2B0A93D0007A87E1 /* SamvedJewelsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamvedJewelsUITests.swift; sourceTree = "<group>"; };
+		1384D6012B0A93D0007A87E1 /* SamvedJewelsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamvedJewelsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1384D60E2B0A9410007A87E1 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1384D6102B0A9419007A87E1 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		13E79A752B112D750002470E /* data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = data.swift; sourceTree = "<group>"; };
+		148C2ABF2C508EDFF1D77A64 /* Pods_SamvedJewels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SamvedJewels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		678894FCE994FFF7AFB9525B /* Pods-SamvedJewels-SamvedJewelsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamvedJewels-SamvedJewelsUITests.debug.xcconfig"; path = "Target Support Files/Pods-SamvedJewels-SamvedJewelsUITests/Pods-SamvedJewels-SamvedJewelsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A0242B41B96FB942032DC8F8 /* Pods-SamvedJewels.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamvedJewels.debug.xcconfig"; path = "Target Support Files/Pods-SamvedJewels/Pods-SamvedJewels.debug.xcconfig"; sourceTree = "<group>"; };
+		ACE176C9B4C3EE1309CFAAFD /* Pods-SamvedJewels-SamvedJewelsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamvedJewels-SamvedJewelsUITests.release.xcconfig"; path = "Target Support Files/Pods-SamvedJewels-SamvedJewelsUITests/Pods-SamvedJewels-SamvedJewelsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B34A1C8C824724C6D9581B21 /* Pods-SamvedJewels.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamvedJewels.release.xcconfig"; path = "Target Support Files/Pods-SamvedJewels/Pods-SamvedJewels.release.xcconfig"; sourceTree = "<group>"; };
+		BBEFAF7D6FBB016FDF5161CA /* Pods-SamvedJewelsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamvedJewelsTests.debug.xcconfig"; path = "Target Support Files/Pods-SamvedJewelsTests/Pods-SamvedJewelsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		ECD4D8758173E31E154BD9DC /* Pods_SamvedJewelsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SamvedJewelsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE61BCC4ACDE9DE01E59CD90 /* Pods-SamvedJewelsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SamvedJewelsTests.release.xcconfig"; path = "Target Support Files/Pods-SamvedJewelsTests/Pods-SamvedJewelsTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1384D5D82B0A93C5007A87E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F9765904F8B54E1A6EBEFBE /* Pods_SamvedJewels.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1384D5EE2B0A93D0007A87E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A95C024CD231B3BA3B23B72 /* Pods_SamvedJewelsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1384D5F82B0A93D0007A87E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75BCF097AE2B30864B3A0141 /* Pods_SamvedJewels_SamvedJewelsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F027C357662EC793CDBB4A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				148C2ABF2C508EDFF1D77A64 /* Pods_SamvedJewels.framework */,
+				037A601DDECC6A99FA01D3B4 /* Pods_SamvedJewels_SamvedJewelsUITests.framework */,
+				ECD4D8758173E31E154BD9DC /* Pods_SamvedJewelsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1384D5D22B0A93C5007A87E1 = {
+			isa = PBXGroup;
+			children = (
+				1384D5DD2B0A93C5007A87E1 /* SamvedJewels */,
+				1384D5F42B0A93D0007A87E1 /* SamvedJewelsTests */,
+				1384D5FE2B0A93D0007A87E1 /* SamvedJewelsUITests */,
+				1384D5DC2B0A93C5007A87E1 /* Products */,
+				B34A03030F3F9CE2D42D55D5 /* Pods */,
+				0F027C357662EC793CDBB4A6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1384D5DC2B0A93C5007A87E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1384D5DB2B0A93C5007A87E1 /* SamvedJewels.app */,
+				1384D5F12B0A93D0007A87E1 /* SamvedJewelsTests.xctest */,
+				1384D5FB2B0A93D0007A87E1 /* SamvedJewelsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1384D5DD2B0A93C5007A87E1 /* SamvedJewels */ = {
+			isa = PBXGroup;
+			children = (
+				1384D5DE2B0A93C5007A87E1 /* AppDelegate.swift */,
+				1384D60E2B0A9410007A87E1 /* ViewController.swift */,
+				13E79A752B112D750002470E /* data.swift */,
+				1384D6102B0A9419007A87E1 /* Network.swift */,
+				1384D5E02B0A93C5007A87E1 /* SceneDelegate.swift */,
+				1384D5E42B0A93C5007A87E1 /* Main.storyboard */,
+				1384D5E72B0A93CF007A87E1 /* Assets.xcassets */,
+				1384D5E92B0A93CF007A87E1 /* LaunchScreen.storyboard */,
+				1384D5EC2B0A93CF007A87E1 /* Info.plist */,
+			);
+			path = SamvedJewels;
+			sourceTree = "<group>";
+		};
+		1384D5F42B0A93D0007A87E1 /* SamvedJewelsTests */ = {
+			isa = PBXGroup;
+			children = (
+				1384D5F52B0A93D0007A87E1 /* SamvedJewelsTests.swift */,
+			);
+			path = SamvedJewelsTests;
+			sourceTree = "<group>";
+		};
+		1384D5FE2B0A93D0007A87E1 /* SamvedJewelsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1384D5FF2B0A93D0007A87E1 /* SamvedJewelsUITests.swift */,
+				1384D6012B0A93D0007A87E1 /* SamvedJewelsUITestsLaunchTests.swift */,
+			);
+			path = SamvedJewelsUITests;
+			sourceTree = "<group>";
+		};
+		B34A03030F3F9CE2D42D55D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0242B41B96FB942032DC8F8 /* Pods-SamvedJewels.debug.xcconfig */,
+				B34A1C8C824724C6D9581B21 /* Pods-SamvedJewels.release.xcconfig */,
+				678894FCE994FFF7AFB9525B /* Pods-SamvedJewels-SamvedJewelsUITests.debug.xcconfig */,
+				ACE176C9B4C3EE1309CFAAFD /* Pods-SamvedJewels-SamvedJewelsUITests.release.xcconfig */,
+				BBEFAF7D6FBB016FDF5161CA /* Pods-SamvedJewelsTests.debug.xcconfig */,
+				FE61BCC4ACDE9DE01E59CD90 /* Pods-SamvedJewelsTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1384D5DA2B0A93C5007A87E1 /* SamvedJewels */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1384D6052B0A93D0007A87E1 /* Build configuration list for PBXNativeTarget "SamvedJewels" */;
+			buildPhases = (
+				459A59236EAE085405B49077 /* [CP] Check Pods Manifest.lock */,
+				1384D5D72B0A93C5007A87E1 /* Sources */,
+				1384D5D82B0A93C5007A87E1 /* Frameworks */,
+				1384D5D92B0A93C5007A87E1 /* Resources */,
+				4D949C46E22DCDB6BE20D4C4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SamvedJewels;
+			productName = SamvedJewels;
+			productReference = 1384D5DB2B0A93C5007A87E1 /* SamvedJewels.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1384D5F02B0A93D0007A87E1 /* SamvedJewelsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1384D6082B0A93D0007A87E1 /* Build configuration list for PBXNativeTarget "SamvedJewelsTests" */;
+			buildPhases = (
+				06D267650EB1DE2AF9184429 /* [CP] Check Pods Manifest.lock */,
+				1384D5ED2B0A93D0007A87E1 /* Sources */,
+				1384D5EE2B0A93D0007A87E1 /* Frameworks */,
+				1384D5EF2B0A93D0007A87E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1384D5F32B0A93D0007A87E1 /* PBXTargetDependency */,
+			);
+			name = SamvedJewelsTests;
+			productName = SamvedJewelsTests;
+			productReference = 1384D5F12B0A93D0007A87E1 /* SamvedJewelsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1384D5FA2B0A93D0007A87E1 /* SamvedJewelsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1384D60B2B0A93D0007A87E1 /* Build configuration list for PBXNativeTarget "SamvedJewelsUITests" */;
+			buildPhases = (
+				1962213446CD41079BC86BE8 /* [CP] Check Pods Manifest.lock */,
+				1384D5F72B0A93D0007A87E1 /* Sources */,
+				1384D5F82B0A93D0007A87E1 /* Frameworks */,
+				1384D5F92B0A93D0007A87E1 /* Resources */,
+				32A45F930A547332CAA76684 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1384D5FD2B0A93D0007A87E1 /* PBXTargetDependency */,
+			);
+			name = SamvedJewelsUITests;
+			productName = SamvedJewelsUITests;
+			productReference = 1384D5FB2B0A93D0007A87E1 /* SamvedJewelsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1384D5D32B0A93C5007A87E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					1384D5DA2B0A93C5007A87E1 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					1384D5F02B0A93D0007A87E1 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 1384D5DA2B0A93C5007A87E1;
+					};
+					1384D5FA2B0A93D0007A87E1 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 1384D5DA2B0A93C5007A87E1;
+					};
+				};
+			};
+			buildConfigurationList = 1384D5D62B0A93C5007A87E1 /* Build configuration list for PBXProject "SamvedJewels" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1384D5D22B0A93C5007A87E1;
+			productRefGroup = 1384D5DC2B0A93C5007A87E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1384D5DA2B0A93C5007A87E1 /* SamvedJewels */,
+				1384D5F02B0A93D0007A87E1 /* SamvedJewelsTests */,
+				1384D5FA2B0A93D0007A87E1 /* SamvedJewelsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1384D5D92B0A93C5007A87E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1384D5EB2B0A93CF007A87E1 /* LaunchScreen.storyboard in Resources */,
+				1384D5E82B0A93CF007A87E1 /* Assets.xcassets in Resources */,
+				1384D5E62B0A93C5007A87E1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1384D5EF2B0A93D0007A87E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1384D5F92B0A93D0007A87E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06D267650EB1DE2AF9184429 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SamvedJewelsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1962213446CD41079BC86BE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SamvedJewels-SamvedJewelsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32A45F930A547332CAA76684 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SamvedJewels-SamvedJewelsUITests/Pods-SamvedJewels-SamvedJewelsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SamvedJewels-SamvedJewelsUITests/Pods-SamvedJewels-SamvedJewelsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SamvedJewels-SamvedJewelsUITests/Pods-SamvedJewels-SamvedJewelsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		459A59236EAE085405B49077 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SamvedJewels-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D949C46E22DCDB6BE20D4C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SamvedJewels/Pods-SamvedJewels-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SamvedJewels/Pods-SamvedJewels-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SamvedJewels/Pods-SamvedJewels-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1384D5D72B0A93C5007A87E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1384D60F2B0A9410007A87E1 /* ViewController.swift in Sources */,
+				1384D5DF2B0A93C5007A87E1 /* AppDelegate.swift in Sources */,
+				1384D6112B0A9419007A87E1 /* Network.swift in Sources */,
+				13E79A762B112D750002470E /* data.swift in Sources */,
+				1384D5E12B0A93C5007A87E1 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1384D5ED2B0A93D0007A87E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1384D5F62B0A93D0007A87E1 /* SamvedJewelsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1384D5F72B0A93D0007A87E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1384D6022B0A93D0007A87E1 /* SamvedJewelsUITestsLaunchTests.swift in Sources */,
+				1384D6002B0A93D0007A87E1 /* SamvedJewelsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1384D5F32B0A93D0007A87E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1384D5DA2B0A93C5007A87E1 /* SamvedJewels */;
+			targetProxy = 1384D5F22B0A93D0007A87E1 /* PBXContainerItemProxy */;
+		};
+		1384D5FD2B0A93D0007A87E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1384D5DA2B0A93C5007A87E1 /* SamvedJewels */;
+			targetProxy = 1384D5FC2B0A93D0007A87E1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1384D5E42B0A93C5007A87E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1384D5E52B0A93C5007A87E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1384D5E92B0A93CF007A87E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1384D5EA2B0A93CF007A87E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1384D6032B0A93D0007A87E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1384D6042B0A93D0007A87E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1384D6062B0A93D0007A87E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0242B41B96FB942032DC8F8 /* Pods-SamvedJewels.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = 99Z64KA6L2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SamvedJewels/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sj.samwedjewels.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1384D6072B0A93D0007A87E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B34A1C8C824724C6D9581B21 /* Pods-SamvedJewels.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = 99Z64KA6L2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SamvedJewels/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sj.samwedjewels.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1384D6092B0A93D0007A87E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBEFAF7D6FBB016FDF5161CA /* Pods-SamvedJewelsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 99Z64KA6L2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OpeningApp.SamvedJewelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SamvedJewels.app/SamvedJewels";
+			};
+			name = Debug;
+		};
+		1384D60A2B0A93D0007A87E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE61BCC4ACDE9DE01E59CD90 /* Pods-SamvedJewelsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 99Z64KA6L2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OpeningApp.SamvedJewelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SamvedJewels.app/SamvedJewels";
+			};
+			name = Release;
+		};
+		1384D60C2B0A93D0007A87E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 678894FCE994FFF7AFB9525B /* Pods-SamvedJewels-SamvedJewelsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43GBAH2R75;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OpeningApp.SamvedJewelsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SamvedJewels;
+			};
+			name = Debug;
+		};
+		1384D60D2B0A93D0007A87E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACE176C9B4C3EE1309CFAAFD /* Pods-SamvedJewels-SamvedJewelsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 43GBAH2R75;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.OpeningApp.SamvedJewelsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SamvedJewels;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1384D5D62B0A93C5007A87E1 /* Build configuration list for PBXProject "SamvedJewels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1384D6032B0A93D0007A87E1 /* Debug */,
+				1384D6042B0A93D0007A87E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1384D6052B0A93D0007A87E1 /* Build configuration list for PBXNativeTarget "SamvedJewels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1384D6062B0A93D0007A87E1 /* Debug */,
+				1384D6072B0A93D0007A87E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1384D6082B0A93D0007A87E1 /* Build configuration list for PBXNativeTarget "SamvedJewelsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1384D6092B0A93D0007A87E1 /* Debug */,
+				1384D60A2B0A93D0007A87E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1384D60B2B0A93D0007A87E1 /* Build configuration list for PBXNativeTarget "SamvedJewelsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1384D60C2B0A93D0007A87E1 /* Debug */,
+				1384D60D2B0A93D0007A87E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1384D5D32B0A93C5007A87E1 /* Project object */;
+}
